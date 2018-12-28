@@ -1,0 +1,30 @@
+test_login_01:
+ username: '13488834010'
+ password: 159357li
+ tag: 1
+
+test_login_02:
+ username: ' 13488834010'
+ password: 159357li
+ tag: 1
+
+test_login_03:
+ username: '13488834010 '
+ password: 159357li
+ tag: 1
+
+test_login_06:
+ username: '111中文'
+ password: 159357li
+ tag: 0
+ get_msg: '不存在'
+ expect_msg: '此用户不存在'
+
+
+
+test_login_07:
+ username: '13488834010 '
+ password: 9998888
+ tag: 0
+ get_msg: '登录密码'
+ expect_msg: '登录密码错误'
