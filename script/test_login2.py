@@ -27,6 +27,7 @@ class TestLogin:
         self.driver=BaseDriver().init_driver("com.yunmall.lc","com.yunmall.ymctoc.ui.activity.MainActivity")
         self.navigation=NavigationPage(self.driver)
 
+
     def teardown_class(self):
         self.driver.quit()
     @allure.step("登录开始")
@@ -45,10 +46,11 @@ class TestLogin:
         if tag==1:
             try:
                 login_stat=self.navigation.get_person_center_page().is_login_sucess()
+                assert login_stat, self.navigation.get_login_in_page().get_screen()
                 self.navigation.get_person_center_page().click_person_center_setting()
                 self.navigation.get_setting_page().login_out_account()
                 # 断言失败 截图提示
-                assert login_stat,self.navigation.get_login_in_page().get_screen()
+
             except:
                 # 若有错误 截图
                 self.navigation.get_login_in_page().get_screen()

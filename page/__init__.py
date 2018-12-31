@@ -33,9 +33,39 @@ person_center_all_order = By.ID,"com.yunmall.lc:id/order_more_txt"
 """
 setting_center_login_out_btn =By.ID,"com.yunmall.lc:id/setting_logout"
 setting_center_login_dialog_confirm_btn =By.ID,"com.yunmall.lc:id/ymdialog_right_button"
+setting_address_manage =By.ID,"com.yunmall.lc:id/setting_address_manage"
 
 """
-toast
+地址管理
 """
-sign_in_toast_user_no_exist =By.XPATH,"//*[contains(@text,'用户不存在')]"
+address_manage_back =By.ID,"com.yunmall.lc:id/ymtitlebar_left_btn_image"
+address_manage_editor_save =By.ID,"com.yunmall.lc:id/ymtitlebar_right_btn"
+address_manage_new_add_address =By.ID,"com.yunmall.lc:id/address_add_new_btn"
+address_manage_modify_address =By.ID,"com.yunmall.lc:id/modify"
+address_manage_delete_address =By.ID,"com.yunmall.lc:id/delete"
+
+"""
+新增地址/更新地址
+"""
+new_adress_back =By.ID,"com.yunmall.lc:id/back"
+new_adress_save =By.ID,"com.yunmall.lc:id/button_send"
+new_adress_receipt_name =By.ID,"com.yunmall.lc:id/address_receipt_name"
+new_adress_phone =By.ID,"com.yunmall.lc:id/address_add_phone"
+new_adress_province =By.ID,"com.yunmall.lc:id/address_province"
+new_adress_detail_address =By.ID,"com.yunmall.lc:id/address_detail_addr_info"
+new_adress_post_code =By.ID,"com.yunmall.lc:id/address_post_code"
+
+"""
+删除地址
+"""
+del_address_accept=By.ID,"com.yunmall.lc:id/ymdialog_left_button"
+del_address_cancel=By.ID,"com.yunmall.lc:id/ymdialog_right_button"
+
+
+"""
+省/直辖市
+"""
+select_area=By.ID,"com.yunmall.lc:id/area_title"
+
+
 

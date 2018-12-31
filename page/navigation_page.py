@@ -3,6 +3,9 @@ from page.login_in_page import LoginInPage
 from page.person_center_page import PersonCenterPage
 from page.setting_page import SettingPage
 from page.sign_in_page import SignInPage
+from page.address_manage_page import AddressManagePage
+from page.new_add_address_page import NewAddAddressPage
+
 
 class NavigationPage:
     def __init__(self,driver):
@@ -28,4 +31,10 @@ class NavigationPage:
     def get_sign_in_page(self):
         return SignInPage(self.driver)
 
+    # 获得address_manage_page的实例对象
+    def get_address_manage_page(self):
+        return AddressManagePage(self.driver)
 
+    # 获得new_add_address_page的实例对象
+    def get_new_add_address_page(self):
+        return NewAddAddressPage(self.driver)

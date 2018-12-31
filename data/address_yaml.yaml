@@ -1,0 +1,55 @@
+#data1:
+# tag: 0
+# receipt: aa
+# get_data: 11位
+# expect: 11位手机号
+#
+#data2:
+# tag: 0
+# receipt: a
+# get_data: 20个字符
+# expect: 收货人姓名为2–20个字符
+#
+#data3:
+# tag: 0
+# receipt: aa
+# phone: 13288883214
+# get_data: 请输入
+# expect: 请输入详细地址
+#
+#data4:
+# tag: 0
+# receipt: aa
+# phone: 1328888321
+# get_data: 11位
+# expect: 11位手机号
+#
+#data5:
+# tag: 0
+# receipt: aa
+# phone: 13288883214
+# province: [广东省,广州市,天河区]
+# get_data: 请输入
+# expect: 请输入详细地址
+#
+#data5:
+# tag: 0
+# receipt: aa
+# phone: 13288883214
+# province: [广东省,广州市,天河区]
+# detail: aa
+# get_data: 5到60个字符
+# expect: 详细地址为5到60个字符
+#
+data6:
+ tag: 1
+ receipt: aa
+ phone: 13288883214
+# province: [广东省,广州市,天河区]
+ province: [山西省,大同市,广灵县]
+ detail: aaaaa
+#
+#
+#
+#
+#

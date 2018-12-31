@@ -21,3 +21,7 @@ class SettingPage(BaseAction):
         # 3.点击弹出框的确认
         allure.attach("退出", "点击确认按钮")
         self.click_element(page.setting_center_login_dialog_confirm_btn)
+
+    @allure.step("设置页面 点击地址管理")
+    def click_adress_manage(self):
+        self.click_element(page.setting_address_manage)

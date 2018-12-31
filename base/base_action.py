@@ -52,6 +52,8 @@ class BaseAction:
     def get_screen(self):
         path="./screen/{}.png".format(int(time.time()))
         self.driver.get_screenshot_as_file(path)
+        with open(path,"rb") as f:
+            allure.attach(path,f.read(),allure.attach_type.PNG)
 
     # 获取toast
     @allure.step("获取toast信息")

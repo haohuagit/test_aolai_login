@@ -17,12 +17,15 @@ class LoginInPage(BaseAction):
     @allure.step("登录页面")
     def login_in(self,name,password):
         # 1.登录手机号
+        time.sleep(1)
         allure.attach("登录","输入用户名")
         self.input_element(page.login_username_id,name)
         # 2.密码
+        time.sleep(1)
         allure.attach("登录", "输入密码")
         self.input_element(page.login_password_id,password)
         # 3.点击登录
+        time.sleep(1)
         allure.attach("登录", "点击登录按钮")
         self.click_element(page.login_login_in_btn)
 
